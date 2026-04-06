@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 20px 40px; /* THÊM DÒNG NÀY */
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 25px;
+}
+
+footer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.copytext {
+    text-align: center;
+    color: #999;
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 14px;
+}
+

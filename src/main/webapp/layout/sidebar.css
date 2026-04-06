@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 260px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.profile-box {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.profile-box img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar-item {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.sidebar-item.active {
+    background: rgba(230, 10, 21, 0.3);
+    color: #e60a15;
+    font-weight: 600;
+}
+
+.sidebar-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .sidebar {
+        width: 100%;
+    }
+}

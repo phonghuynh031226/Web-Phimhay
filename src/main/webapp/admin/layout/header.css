@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* ===== ADMIN HEADER ===== */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.admin-header-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.admin-header-subtitle {
+    margin-top: 6px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+}
+
+

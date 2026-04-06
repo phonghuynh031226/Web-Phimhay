@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+.sidebar-menu a.active {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    font-weight: 600;
+}
+.sidebar-menu a.active span {
+    color: #fff;
+}
+
+
+
+/* ===== SIDEBAR WRAPPER ===== */
+.sidebar {
+    width: 260px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+/* ===== LOGO ===== */
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+}
+
+.sidebar-logo-icon {
+    background: #e60a15;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-logo-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ===== MENU ===== */
+.sidebar-menu {
+    margin-top: 32px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-menu a .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.sidebar-menu a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.sidebar-menu a.active {
+    background: #e60a15;
+    color: #fff;
+}
+
+.sidebar-menu a.active .material-symbols-outlined {
+    color: #fff;
+}
+
+/* ===== FOOTER ===== */
+.sidebar-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 16px;
+    margin-top: 16px;
+}
+
+/* ===== LOGOUT BUTTONS ===== */
+.sidebar-logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.sidebar-logout:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== MATERIAL ICONS ===== */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    vertical-align: middle;
+}

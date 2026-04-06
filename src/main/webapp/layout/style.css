@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* ===== RESET ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: #121212;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ======= LAYOUT ======= */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+
+/* ===== SECTION ===== */
+section {
+    margin-top: 45px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* ===== MOVIE GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 28px;
+}
+
+.movie-card {
+    text-decoration: none;
+    color: white;
+}
+
+.movie-thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: .25s;
+}
+
+.movie-card:hover .movie-thumb {
+    transform: scale(1.06);
+}
+
+.movie-info h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.movie-info p {
+    color: #999;
+    font-size: 14px;
+}
+
+/* PAGINATION */
+.pagination {
+    list-style: none !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 5px;
+    padding: 0;
+}
+
+.pagination li {
+    list-style: none !important;
+}
+
+.pagination a {
+    padding: 10px 16px;
+    background: rgba(255,255,255,0.06);
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.pagination a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.pagination .active {
+    background: #e60a15;
+    color: white;
+}
+
+
+
